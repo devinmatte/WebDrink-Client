@@ -10,15 +10,29 @@
  */
 
 import React from 'react';
-import { FormattedMessage } from 'react-intl';
-import messages from './messages';
+// import { FormattedMessage } from 'react-intl';
+import { Col, Container, Row } from 'reactstrap';
+// import messages from './messages';
+import DrinkMachine from '../../components/DrinkMachine';
+
 
 export default class HomePage extends React.PureComponent { // eslint-disable-line react/prefer-stateless-function
   render() {
     return (
-      <h1>
-        <FormattedMessage {...messages.header} />
-      </h1>
+      <div>
+        <Container>
+          <Row>
+            <Col xs="6"><DrinkMachine /></Col>
+            <Col xs="6"><DrinkMachine /></Col>
+          </Row>
+        </Container>
+      </div>
     );
+
+    // return (
+    //   <h1>
+    //     <FormattedMessage {...messages.header} />
+    //   </h1>
+    // )
   }
 }

@@ -45,30 +45,29 @@ class NavBar extends React.Component { // eslint-disable-line react/prefer-state
       <div>
         <Navbar color="primary" dark expand="md">
           <Container>
-            <NavbarBrand href="/">reactstrap</NavbarBrand>
-            <NavbarToggler onClick={this.toggle}/>
+            <NavbarBrand href="/">WebDrink</NavbarBrand>
+            <NavbarToggler onClick={this.toggle} />
             <Collapse isOpen={this.state.isOpen} navbar>
-              <Nav className="ml-auto" navbar>
+              <Nav navbar>
                 <NavItem>
                   <NavLink href="/components/">Components</NavLink>
                 </NavItem>
-                <NavItem>
-                  <NavLink href="https://github.com/reactstrap/reactstrap">Github</NavLink>
-                </NavItem>
+              </Nav>
+              <Nav navbar className="ml-auto">
                 <UncontrolledDropdown nav inNavbar>
                   <DropdownToggle nav caret>
-                    Options
+                    Username
                   </DropdownToggle>
                   <DropdownMenu>
                     <DropdownItem>
-                      Option 1
+                      Dashboard
                     </DropdownItem>
                     <DropdownItem>
-                      Option 2
+                      Settings
                     </DropdownItem>
-                    <DropdownItem divider/>
+                    <DropdownItem divider />
                     <DropdownItem>
-                      Reset
+                      Logout
                     </DropdownItem>
                   </DropdownMenu>
                 </UncontrolledDropdown>
