@@ -1,12 +1,12 @@
 /**
-*
-* DrinkMachine
-*
-*/
+ *
+ * DrinkMachine
+ *
+ */
 
 import React from 'react';
 // import styled from 'styled-components';
-import { ListGroup, ListGroupItem } from 'reactstrap';
+import { Table } from 'reactstrap';
 import DrinkItem from '../DrinkItem';
 
 
@@ -16,9 +16,21 @@ import DrinkItem from '../DrinkItem';
 class DrinkMachine extends React.Component { // eslint-disable-line react/prefer-stateless-function
   render() {
     return (
-      <ListGroup>
-        <ListGroupItem><DrinkItem /></ListGroupItem>
-      </ListGroup>
+      <Table>
+        <thead>
+          <tr>
+            <th>Drink Machine Name</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row"><DrinkItem /></th>
+          </tr>
+          <tr>
+            <th scope="row"><DrinkItem /></th>
+          </tr>
+        </tbody>
+      </Table>
     );
   }
 
@@ -31,8 +43,6 @@ class DrinkMachine extends React.Component { // eslint-disable-line react/prefer
   // }
 }
 
-DrinkMachine.propTypes = {
-
-};
+DrinkMachine.propTypes = {};
 
 export default DrinkMachine;

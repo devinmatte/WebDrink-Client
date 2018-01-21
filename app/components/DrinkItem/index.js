@@ -7,7 +7,7 @@
 import React from 'react';
 // import styled from 'styled-components';
 
-import { Collapse, CardBody, Card } from 'reactstrap';
+import { Collapse, CardBody, Card, Button } from 'reactstrap';
 import DrinkLogo from '../DrinkLogo';
 
 // import { FormattedMessage } from 'react-intl';
@@ -32,10 +32,7 @@ class DrinkItem extends React.Component { // eslint-disable-line react/prefer-st
           {/* TODO: Make DrinkLogo trigger collapse */}
           <Collapse isOpen={this.state.collapse}>
             <CardBody>
-              Anim pariatur cliche reprehenderit,
-              enim eiusmod high life accusamus terry richardson ad squid. Nihil
-              anim keffiyeh helvetica, craft beer labore wes anderson cred
-              nesciunt sapiente ea proident.
+              <Button color={'primary'} block>Drop</Button>
             </CardBody>
           </Collapse>
         </Card>
