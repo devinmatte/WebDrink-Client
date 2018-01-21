@@ -7,7 +7,7 @@
 import React from 'react';
 // import styled from 'styled-components';
 
-import { Collapse, Button, CardBody, Card } from 'reactstrap';
+import { Collapse, CardBody, Card } from 'reactstrap';
 import DrinkLogo from '../DrinkLogo';
 
 // import { FormattedMessage } from 'react-intl';
