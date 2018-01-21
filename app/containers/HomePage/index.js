@@ -22,8 +22,9 @@ export default class HomePage extends React.PureComponent { // eslint-disable-li
       <div>
         <Container>
           <Row>
-            <Col xs="6"><DrinkMachine /></Col>
-            <Col xs="6"><DrinkMachine /></Col>
+            <Col xs={12} lg><DrinkMachine /></Col>
+            <Col xs={12} lg><DrinkMachine /></Col>
+            <Col xs={12} lg><DrinkMachine /></Col>
           </Row>
         </Container>
       </div>

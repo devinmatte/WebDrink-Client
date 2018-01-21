@@ -5,6 +5,7 @@
 */
 
 import React from 'react';
+import PropTypes from 'prop-types';
 // import styled from 'styled-components';
 
 import { Button } from 'reactstrap';
@@ -16,14 +17,14 @@ class DrinkLogo extends React.Component { // eslint-disable-line react/prefer-st
   render() {
     return (
       <div>
-        <Button color="primary" style={{ marginBottom: '1rem' }}>Drink Logo</Button>
+        <img onClick={this.props.onClick} style={{ width: '100%' }} src={'http://www.coca-cola.co.uk/content/dam/journey/gb/en/hidden/Products/Brand-image/Drinks-banners/Dr-Pepper-banner.jpg'} />
       </div>
     );
   }
 }
 
 DrinkLogo.propTypes = {
-
+  onClick: PropTypes.func,
 };
 
 export default DrinkLogo;

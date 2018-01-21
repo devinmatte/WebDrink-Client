@@ -30,9 +30,6 @@ class DrinkItem extends React.Component { // eslint-disable-line react/prefer-st
         <Card>
           <DrinkLogo onClick={this.toggle} />
           {/* TODO: Make DrinkLogo trigger collapse */}
-          <Button color="link" onClick={this.toggle} style={{ marginBottom: '1rem' }}>
-            Show Options
-          </Button>
           <Collapse isOpen={this.state.collapse}>
             <CardBody>
               Anim pariatur cliche reprehenderit,
